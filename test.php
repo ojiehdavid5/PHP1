@@ -12,15 +12,12 @@ echo "You are a teenager";
 for ($i=0; $i < 5; $i++) {
 echo "This is loop number $i\n";
 }
-
-$var= array(1, 2, 3, 4, 5);
-foreach ($var as $value) {
-    echo "Value: $value\n";
-}
-
 $namesAge = array("Fabio"=>"20"
 ,
 "Klevi"=>"16"
 ,
-"John"=>"43"); 
+"John"=>"43");
+echo "Fabio’s age is "
+. $namesAge['Fabio'] . " years old.
+";
 ?>
