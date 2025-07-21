@@ -9,4 +9,7 @@ echo "You are a teenager";
 }else{
     echo "You are an adult";
 }
+for ($i=0; $i < 5; $i++) {
+echo "This is loop number $i\n";
+}
 ?>
