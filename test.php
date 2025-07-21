@@ -17,4 +17,10 @@ $var= array(1, 2, 3, 4, 5);
 foreach ($var as $value) {
     echo "Value: $value\n";
 }
+
+$namesAge = array("Fabio"=>"20"
+,
+"Klevi"=>"16"
+,
+"John"=>"43");
 ?>
