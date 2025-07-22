@@ -63,4 +63,7 @@
 // ,
 // "Tailor");
 
+
+$name = $_GET['name'];  // Gets 'John' from URL
+echo "Hello, $name";
 ?>
