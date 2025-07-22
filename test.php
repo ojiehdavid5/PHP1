@@ -23,9 +23,9 @@ echo "Fabio’s age is "
 
 
 //function in php
-function showGreeting() { // function definition
-echo "Hello Chloe!"; // what this function does
+function showGreeting($name) { // function definition
+echo "Hello "  .$name; // what this function does
 }
 
-showGreeting();
+showGreeting("chuks");
 ?>
