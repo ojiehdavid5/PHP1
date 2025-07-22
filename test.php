@@ -64,8 +64,19 @@
 // "Tailor");
 
 
-$name = $_GET['name'];  // Gets 'John' from URL
-echo "Hello, $name";
-$username = $_POST['username'];
-echo "You entered: $username";
+// $name = $_GET['name'];  // Gets 'John' from URL
+// echo "Hello, $name";
+// $username = $_POST['username'];
+// echo "You entered: $username";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (isset($_POST["name"]) && !empty($_POST["name"])) {
+        $name = htmlspecialchars($_POST["name"]);  // Prevent XSS
+        echo "Hello, $name!";
+    } else {
+        echo "Name is required.";
+    }
+} else {
+    echo "Invalid request method.";
+}
 ?>
