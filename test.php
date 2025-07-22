@@ -20,4 +20,12 @@ $namesAge = array("Fabio"=>"20"
 echo "Fabio’s age is "
 . $namesAge['Fabio'] . " years old.
 ";
+
+
+//function in php
+function showGreeting() { // function definition
+echo "Hello Chloe!"; // what this function does
+}
+
+showGreeting();
 ?>
