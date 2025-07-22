@@ -23,9 +23,43 @@
 
 
 //function in php
-function showGreeting($name) { // function definition
-echo "Hello "  .$name; // what this function does
-}
+// function showGreeting($name) { // function definition
+// echo "Hello "  .$name; // what this function does
+// }
 
-showGreeting("chuks");
+// showGreeting("chuks");
+
+
+function personProfile($name, $city, $job) { // function definition with arguments
+echo "This person is "
+.$name.
+" from "
+.$city.
+"
+.
+";
+echo "";
+echo "His/Her job is "
+.$job.
+"
+.
+";
+}
+personProfile("Fabio"
+,
+"Tirana"
+,
+"Web Dev");
+echo "";
+personProfile("Michael"
+,
+"Athens"
+,
+"Graphic Designer");
+echo "";
+personProfile("Xena"
+,
+"London"
+,
+"Tailor");
 ?>
