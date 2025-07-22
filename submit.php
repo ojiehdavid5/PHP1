@@ -69,6 +69,10 @@
 // $username = $_POST['username'];
 // echo "You entered: $username";
 
+
+error_reporting(E_ALL);
+ini_set("display_errors", 1);
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST["name"]) && !empty($_POST["name"])) {
         $name = htmlspecialchars($_POST["name"]);  // Prevent XSS
