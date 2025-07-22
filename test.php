@@ -66,4 +66,6 @@
 
 $name = $_GET['name'];  // Gets 'John' from URL
 echo "Hello, $name";
+$username = $_POST['username'];
+echo "You entered: $username";
 ?>
